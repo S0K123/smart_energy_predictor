@@ -75,13 +75,13 @@ st.markdown("""
 
 st.title("🌿 EcoElectro: Smart Energy Usage Predictor")
 
-
-bundle = joblib.load("models/energy_model.pkl")
+bundle = joblib.load("energy_model.pkl")
+#bundle = joblib.load("models/energy_model.pkl")
 model = bundle["model"]
 FEATURES = bundle["features"]
 
-
-hist = pd.read_csv("data/hourly_energy.csv", parse_dates=["timestamp"]).sort_values("timestamp")
+hist = pd.read_csv("hourly_energy.csv", parse_dates=["timestamp"]).sort_values("timestamp")
+#hist = pd.read_csv("data/hourly_energy.csv", parse_dates=["timestamp"]).sort_values("timestamp")
 
 # SIDEBAR 
 st.sidebar.header("🔧 Prediction Inputs")

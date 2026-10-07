@@ -1,5 +1,7 @@
 import numpy as np, pandas as pd
-rng = pd.date_range("2025-08-01", "2025-09-30 23:00", freq="H")  # 60 days hourly
+#rng = pd.date_range("2025-08-01", "2025-09-30 23:00", freq="H")  
+# 60 days hourly
+rng = pd.date_range("2025-08-01", "2025-09-30 23:00", freq="h")
 np.random.seed(42)
 
 # base temperature profile (warmer afternoons)

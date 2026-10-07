@@ -27,5 +27,6 @@ df = pd.DataFrame({
     "temp_c": np.round(base_temp,1),
     "kwh": np.round(kwh,3)
 })
-df.to_csv("data/hourly_energy.csv", index=False)
+#df.to_csv("data/hourly_energy.csv", index=False)
+df.to_csv("hourly_energy.csv", index=False)
 print("Wrote data/hourly_energy.csv", df.shape)
